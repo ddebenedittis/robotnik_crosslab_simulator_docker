@@ -12,12 +12,11 @@ Install [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-nati
 
 ## Installation
 
-[Create an SSH Key for GitHub](https://www.toolsqa.com/git/git-ssh-authentication/).
+[Create an SSH Key for GitHub](https://www.toolsqa.com/git/git-ssh-authentication/) if you want to use SSH authentication.
 
-Run
+Clone the repository with `--recursive`
 ```shell
-git clone git@github.com:CentroEPiaggio/Robotnik_CrossLab_Simulator.git
-mv ./Robotnik_CrossLab_Simulator ./src
+git clone --recursive git@github.com:ddebenedittis/robotnik_crosslab_simulator_docker.git
 ```
 
 To build the image run
