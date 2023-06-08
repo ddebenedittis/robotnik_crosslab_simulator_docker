@@ -5,6 +5,7 @@ set -e
 source $HOME/.bashrc
 
 # Change owner of file
-chown $USER /home/.bash_history
+sudo chown $USER: /home/.bash_history
+sudo chown $USER: -R /home/$USER
 
 # Start in home directory

@@ -32,7 +32,7 @@ To run the container use
 
 Build the workspace with
 ```shell
-catkin_make
+catkin build
 ```
 
 ## Usage
