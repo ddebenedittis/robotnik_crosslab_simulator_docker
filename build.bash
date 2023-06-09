@@ -9,13 +9,6 @@ IMAGE_NAME=pnrr_simulator
 
 # =============================== Preliminaries ============================== #
 
-mkdir -p build log
-if [[ $ROS_NUMBER == 1 ]]; then
-    mkdir -p devel
-elif [[ $ROS_NUMBER == 2 ]]; then
-    mkdir -p install
-fi
-
 mkdir -p ~/.vscode ~/.vscode-server ~/.config/Code
 
 # =============================== Help Function ============================== #

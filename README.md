@@ -6,6 +6,8 @@ Docker image for using the ROS Melodic version of the Robotnik simulator.
 
 ## Preliminaries
 
+Install the NVIDIA proprietary drivers on Ubuntu.
+
 Install [Docker Community Edition](https://docs.docker.com/engine/install/ubuntu/) (ex Docker Engine) with post-installation steps for Linux.
 
 Install [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit) (nvidia-docker2).
