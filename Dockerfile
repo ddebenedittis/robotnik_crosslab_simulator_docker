@@ -5,6 +5,8 @@ FROM ${BASE_IMAGE}:${BASE_TAG}
 
 ARG ROS_NUMBER=1
 
+# ================================== Nvidia ================================== #
+
 # nvidia-container-runtime
 ENV NVARCH x86_64
 
@@ -38,7 +40,9 @@ ENV LD_LIBRARY_PATH /usr/local/nvidia/lib:/usr/local/nvidia/lib64
 
 # nvidia-container-runtime
 ENV NVIDIA_VISIBLE_DEVICES all
-ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
+ENV NVIDIA_DRIVER_CAPABILITIES compute,graphics,utility
+
+# ============================================================================ #
 
 # Prevent bash to ask for user input which may break the building process
 ENV DEBIAN_FRONTEND=noninteractive
