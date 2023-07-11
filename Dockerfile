@@ -89,7 +89,7 @@ ENV HOME /home/${USER}
 RUN --mount=type=cache,sharing=locked,target=/var/cache/apt --mount=type=cache,sharing=locked,target=/var/lib/apt \
     --mount=type=bind,source=./src,target=/home/${USER}/catkin_ws/src,rw \
     cd /home/${USER}/catkin_ws \
- && rosdep update \
+ && rosdep update --include-eol-distros \
  && rosdep install --from-paths src --ignore-src -r -y
 
 # Set up environment
